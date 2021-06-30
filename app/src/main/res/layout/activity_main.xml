@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginHorizontal="@dimen/margin_horizontal"
+    android:layout_marginVertical="@dimen/margin_vertical"
+    tools:context=".MainActivity">
+
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/img_resume"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ali"
+        android:layout_centerHorizontal="true"/>
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/txt_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/name"
+        android:layout_alignParentEnd="true"
+        android:layout_below="@+id/img_resume"
+        android:padding="@dimen/padding_text"
+        android:textStyle="bold"
+        android:textSize="@dimen/name"/>
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btn_education"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/education"
+        android:layout_alignParentEnd="true"
+        android:layout_below="@id/txt_name"
+        android:textColor="@color/white"
+        android:background="@drawable/button_corner"/>
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btn_skills"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/skills"
+        android:layout_alignParentEnd="true"
+        android:layout_below="@id/btn_education"
+        android:textColor="@color/white"
+        android:background="@drawable/button_corner"/>
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btn_projects"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/projects"
+        android:layout_alignParentEnd="true"
+        android:layout_below="@id/btn_skills"
+        android:textColor="@color/white"
+        android:background="@drawable/button_corner"/>
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btn_career"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/career"
+        android:layout_alignParentEnd="true"
+        android:layout_below="@id/btn_projects"
+        android:textColor="@color/white"
+        android:background="@drawable/button_corner"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_below="@+id/btn_career"
+        android:textColor="@color/white"
+        android:background="@drawable/button_corner">
+
+        <!--<androidx.appcompat.widget.AppCompatImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_telegram"/>
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:srcCompat="@drawable/ic_linkedin"/>
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:srcCompat="@drawable/ic_github"/>-->
+
+    </LinearLayout>
+
+
+</RelativeLayout>

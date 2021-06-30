@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">رزومه</string>
+    <string name="name">علی امانی</string>
+    <string name="education">سوابق تحصیلی</string>
+    <string name="skills">مهارت ها</string>
+    <string name="projects">نمونه کارها</string>
+    <string name="career">سوابق شغلی</string>
+</resources>
