@@ -1,9 +1,181 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:layout_marginHorizontal="@dimen/margin_horizontal"
+    android:layout_marginVertical="@dimen/margin_vertical"
     tools:context=".SkillsActivity">
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/txt_skills"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:text="@string/skills"
+        style="@style/title" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/txt_android"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_below="@id/txt_skills"
+        android:text="@string/android"
+        style="@style/subtitle"/>
+
+    <ProgressBar
+        android:id="@+id/pgs_android"
+        android:layout_width="120dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/txt_skills"
+        android:layout_alignBottom="@id/txt_android"
+        style="@style/Widget.AppCompat.ProgressBar.Horizontal"
+        android:max="100"
+        android:progress="50"/>
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/txt_java"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_below="@id/txt_android"
+        android:text="@string/java"
+        style="@style/subtitle"/>
+
+    <ProgressBar
+        android:id="@+id/pgs_java"
+        android:layout_width="120dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/pgs_android"
+        android:layout_alignBottom="@id/txt_java"
+        style="@style/Widget.AppCompat.ProgressBar.Horizontal"
+        android:max="100"
+        android:progress="80"/>
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/txt_flutter"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_below="@id/txt_java"
+        android:text="@string/flutter"
+        style="@style/subtitle"/>
+
+    <ProgressBar
+        android:id="@+id/pgs_flutter"
+        android:layout_width="120dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/pgs_java"
+        android:layout_alignBottom="@id/txt_flutter"
+        style="@style/Widget.AppCompat.ProgressBar.Horizontal"
+        android:max="100"
+        android:progress="60"/>
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/txt_sqlite"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_below="@id/txt_flutter"
+        android:text="@string/sqlite"
+        style="@style/subtitle"/>
+
+    <ProgressBar
+        android:id="@+id/pgs_sqlite"
+        android:layout_width="120dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/pgs_flutter"
+        android:layout_alignBottom="@id/txt_sqlite"
+        style="@style/Widget.AppCompat.ProgressBar.Horizontal"
+        android:max="100"
+        android:progress="80"/>
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/txt_xml"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_below="@id/txt_sqlite"
+        android:text="@string/xml"
+        style="@style/subtitle"/>
+
+    <ProgressBar
+        android:id="@+id/pgs_xml"
+        android:layout_width="120dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/pgs_sqlite"
+        android:layout_alignBottom="@id/txt_xml"
+        style="@style/Widget.AppCompat.ProgressBar.Horizontal"
+        android:max="100"
+        android:progress="70"/>
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/txt_languages"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/margin_vertical_widget"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/txt_xml"
+        android:text="@string/languages"
+        style="@style/title" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/txt_english"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_below="@id/txt_languages"
+        android:text="@string/english"
+        style="@style/subtitle"/>
+
+    <ProgressBar
+        android:id="@+id/pgs_english"
+        android:layout_width="120dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/txt_languages"
+        android:layout_alignBottom="@id/txt_english"
+        style="@style/Widget.AppCompat.ProgressBar.Horizontal"
+        android:max="100"
+        android:progress="80"/>
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/txt_certificates"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/margin_vertical_widget"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/txt_english"
+        android:text="@string/certificates"
+        style="@style/title" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/txt_android_cert"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_below="@id/txt_certificates"
+        android:text="@string/android_cert"
+        style="@style/body"/>
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/txt_flutter_cert"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_below="@id/txt_android_cert"
+        android:text="@string/flutter_cert"
+        style="@style/body"/>
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/txt_english_cert"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_below="@id/txt_flutter_cert"
+        android:text="@string/english_cert"
+        android:gravity="end"
+        style="@style/body"/>
+
+</RelativeLayout>

@@ -1,7 +1,20 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <dimen name="margin_vertical">40dp</dimen>
+    <dimen name="margin_vertical">30dp</dimen>
     <dimen name="margin_horizontal">20dp</dimen>
+    <dimen name="margin_vertical_widget">10dp</dimen>
+    <dimen name="margin_horizontal_widget">6dp</dimen>
+    <dimen name="margin_end_name">12dp</dimen>
+
     <dimen name="padding_text">8dp</dimen>
-    <dimen name="name">24sp</dimen>
+
+    <dimen name="name">20sp</dimen>
+
+    <dimen name="title">20sp</dimen>
+    <dimen name="subtitle">18sp</dimen>
+    <dimen name="body">16sp</dimen>
+
+    <dimen name="logo_size">96dp</dimen>
+    <dimen name="description">14sp</dimen>
+
 </resources>

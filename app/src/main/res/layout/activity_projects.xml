@@ -1,9 +1,53 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:layout_marginVertical="@dimen/margin_vertical"
+    android:layout_marginHorizontal="@dimen/margin_horizontal"
     tools:context=".ProjectsActivity">
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/txt_projects"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="@string/projects"
+        style="@style/title"/>
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/txt_deep"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/txt_projects"
+        android:text="@string/deep_learning"
+        style="@style/subtitle"/>
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/txt_deep_location"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/txt_deep"
+        android:text="@string/deep_learning_location"
+        style="@style/body"/>
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/txt_deep_date"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/txt_deep_location"
+        android:text="@string/deep_learning_date"
+        style="@style/body"/>
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/txt_deep_desc"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/txt_deep_date"
+        android:text="@string/deep_learning_description"
+        style="@style/body"
+        android:justificationMode="inter_word"/>
+
+</RelativeLayout>

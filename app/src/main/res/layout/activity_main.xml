@@ -8,13 +8,14 @@
     android:layout_marginVertical="@dimen/margin_vertical"
     tools:context=".MainActivity">
 
-
     <androidx.appcompat.widget.AppCompatImageView
         android:id="@+id/img_resume"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:src="@drawable/ali"
-        android:layout_centerHorizontal="true"/>
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/margin_vertical_widget"/>
+
 
     <androidx.appcompat.widget.AppCompatTextView
         android:id="@+id/txt_name"
@@ -23,9 +24,25 @@
         android:text="@string/name"
         android:layout_alignParentEnd="true"
         android:layout_below="@+id/img_resume"
+        android:layout_marginEnd="@dimen/margin_end_name"
+        android:layout_marginTop="@dimen/margin_vertical_widget"
         android:padding="@dimen/padding_text"
         android:textStyle="bold"
         android:textSize="@dimen/name"/>
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/txt_desc"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/description"
+        android:layout_alignParentEnd="true"
+        android:layout_below="@+id/txt_name"
+        android:layout_marginEnd="@dimen/margin_end_name"
+        android:layout_marginTop="@dimen/margin_vertical_widget"
+        android:padding="@dimen/padding_text"
+        android:textStyle="bold"
+        android:textSize="@dimen/description"
+        android:justificationMode="inter_word"/>
 
     <androidx.appcompat.widget.AppCompatButton
         android:id="@+id/btn_education"
@@ -33,7 +50,8 @@
         android:layout_height="wrap_content"
         android:text="@string/education"
         android:layout_alignParentEnd="true"
-        android:layout_below="@id/txt_name"
+        android:layout_below="@id/txt_desc"
+        android:layout_marginVertical="@dimen/margin_vertical_widget"
         android:textColor="@color/white"
         android:background="@drawable/button_corner"/>
 
@@ -44,6 +62,7 @@
         android:text="@string/skills"
         android:layout_alignParentEnd="true"
         android:layout_below="@id/btn_education"
+        android:layout_marginVertical="@dimen/margin_vertical_widget"
         android:textColor="@color/white"
         android:background="@drawable/button_corner"/>
 
@@ -54,6 +73,7 @@
         android:text="@string/projects"
         android:layout_alignParentEnd="true"
         android:layout_below="@id/btn_skills"
+        android:layout_marginVertical="@dimen/margin_vertical_widget"
         android:textColor="@color/white"
         android:background="@drawable/button_corner"/>
 
@@ -64,33 +84,44 @@
         android:text="@string/career"
         android:layout_alignParentEnd="true"
         android:layout_below="@id/btn_projects"
+        android:layout_marginVertical="@dimen/margin_vertical_widget"
         android:textColor="@color/white"
         android:background="@drawable/button_corner"/>
 
-    <LinearLayout
+    <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:orientation="horizontal"
+        android:layout_alignParentBottom="true"
         android:layout_below="@+id/btn_career"
-        android:textColor="@color/white"
-        android:background="@drawable/button_corner">
-
-        <!--<androidx.appcompat.widget.AppCompatImageView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:src="@drawable/ic_telegram"/>
+        android:layout_marginHorizontal="@dimen/margin_horizontal">
 
         <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/img_linkedin"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:layout_marginHorizontal="@dimen/margin_horizontal_widget"
+            android:layout_centerHorizontal="true"
+            android:layout_alignParentBottom="true"
             app:srcCompat="@drawable/ic_linkedin"/>
 
         <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/img_telegram"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            app:srcCompat="@drawable/ic_github"/>-->
+            android:layout_marginHorizontal="@dimen/margin_horizontal_widget"
+            android:layout_alignBottom="@id/img_linkedin"
+            android:layout_toStartOf="@id/img_linkedin"
+            app:srcCompat="@drawable/ic_telegram"/>
 
-    </LinearLayout>
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/img_github"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="@dimen/margin_horizontal_widget"
+            android:layout_alignBottom="@id/img_linkedin"
+            android:layout_toEndOf="@id/img_linkedin"
+            app:srcCompat="@drawable/ic_github"/>
 
+    </RelativeLayout>
 
 </RelativeLayout>

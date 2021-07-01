@@ -1,8 +1,53 @@
 <resources>
+
     <string name="app_name">رزومه</string>
+
     <string name="name">علی امانی</string>
+
     <string name="education">سوابق تحصیلی</string>
     <string name="skills">مهارت ها</string>
     <string name="projects">نمونه کارها</string>
     <string name="career">سوابق شغلی</string>
+
+    <string name="linkedin_url">https://www.linkedin.com/in/aliamani</string>
+    <string name="telegram_url">https://t.me/ali42684</string>
+    <string name="github_url">https://github.com/MrAliAmani</string>
+
+    <string name="amirkabir_degree">کارشناسی ارشد مهندسی کامپیوتر</string>
+    <string name="software">گرایش نرم افزار</string>
+    <string name="amirkabir">دانشگاه امیرکبیر</string>
+    <string name="amirkabir_date">ورودی 1399</string>
+    <string name="amirkabir_average">معدل 15.87</string>
+
+    <string name="shahrekord_degree">کارشناسی مهندسی کامپیوتر</string>
+    <string name="shahrekord">دانشگاه شهرکرد</string>
+    <string name="shahrekord_date">1394_1399</string>
+    <string name="shahrekord_average">معدل 18.21</string>
+
+    <string name="android">Android</string>
+    <string name="java">Java</string>
+    <string name="flutter">Flutter</string>
+    <string name="sqlite">sqlite</string>
+    <string name="xml">xml</string>
+
+    <string name="languages">زبان ها</string>
+    <string name="english">English</string>
+
+    <string name="abfa_chb">شرکت آب و فاضلاب چهارمحال و بختیاری</string>
+    <string name="intern">کارآموز</string>
+    <string name="abfa_chb_date">تیر 1398_شهریور 1398</string>
+    <string name="achievements">دستاوردها</string>
+    <string name="site_database">ایجاد نمونه سایت و پایگاه داده</string>
+
+    <string name="deep_learning">تشخیص حرکت با یادگیری عمیق</string>
+    <string name="deep_learning_location">پروژه ی کارشناسی دانشگاه شهرکرد</string>
+    <string name="deep_learning_date">آبان 1396</string>
+    <string name="deep_learning_description">هدف از این پروژه برآورد انسانی با روش یادگیری عمیق و مقایسه ی روش های مختلف آن با VideoPose3D از MIT است.روش اول استفاده از دوربین کینکت است.روش دوم پروژه ی است که مختصات سه بعدی مفاصل را به دست می آورد.روش سوم به دست آوردن مختصات مفاصل به صورت دو بعدی و تبدیل آن به مختصات سه بعدی با روش استریو و نمایش نتایج آن است.</string>
+
+    <string name="certificates">دوره ها و مدارک</string>
+    <string name="android_cert">اندروید، آموزشگاه اندروید ایران، اردیبهشت 1400</string>
+    <string name="flutter_cert">فلاتر، آموزشگاه اندروید ایران، اردیبهشت 1400</string>
+    <string name="english_cert">زبان انگلیسی، آموزشگاه زبان امیرکبیر، اردیبهشت 1400</string>
+    <string name="description">من یک برنامه نویس اندروید علاقه مند به کار با جاوا،کاتلین و فلاتر هستم.</string>
+
 </resources>

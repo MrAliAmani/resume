@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.alidroid.resume">
+    package="com.alidroid.resume" >
 
     <application
         android:allowBackup="true"
@@ -8,12 +8,13 @@
         android:label="@string/app_name"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
-        android:theme="@style/Theme.Resume">
-        <activity android:name=".ProjectsActivity"></activity>
+        android:theme="@style/Theme.Resume" >
+        <activity android:name=".ProjectsActivity" >
+        </activity>
         <activity android:name=".CareerActivity" />
         <activity android:name=".EducationActivity" />
         <activity android:name=".SkillsActivity" />
-        <activity android:name=".MainActivity">
+        <activity android:name=".MainActivity" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
